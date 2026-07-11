@@ -60,7 +60,7 @@ export default function HomePage() {
               href="/login"
               className="font-sans bg-[#E0A458] text-[#2C1B0A] text-sm font-medium px-6 py-3 rounded-full hover:bg-[#eeb672] transition-colors"
             >
-              Sign in
+              Log In
             </a>
             <a
               href="#about"
