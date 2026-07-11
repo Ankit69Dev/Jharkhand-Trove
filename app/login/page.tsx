@@ -7,6 +7,7 @@ import Link from 'next/link';
 import UnauthNavbar from '@/components/navbar';
 import TextPressure from '@/components/TextPressure';
 import Footer from '@/components/Footer';
+import Button from '@/components/Button';
 
 const JharkhandGlobe3D = dynamic(() => import('@/components/3dMap'), {
   ssr: false,
@@ -125,7 +126,7 @@ export default function LoginPage() {
               </div>
             </div>
 
-            <button
+            <Button
               type="submit"
               disabled={loading}
               className="w-full font-sans bg-[#E0A458] text-[#2C1B0A] text-sm font-medium px-6 py-3 rounded-full
@@ -133,7 +134,7 @@ export default function LoginPage() {
                          mt-2"
             >
               {loading ? 'Signing in…' : 'Sign in'}
-            </button>
+            </Button>
           </form>
 
           <div className="flex items-center gap-4 my-8">
