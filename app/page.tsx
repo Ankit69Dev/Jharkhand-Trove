@@ -7,6 +7,7 @@ import UnauthNavbar from '@/components/navbar';
 import TextPressure from '@/components/TextPressure';
 import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
+import Button from '@/components/Button';
 
 const JharkhandGlobe3D = dynamic(() => import('@/components/3dMap'), {
   ssr: false,
@@ -43,9 +44,9 @@ export default function HomePage() {
 
           <TextPressure
             segments={[
-              { text: 'Jharkhand', color: '#F3EEE1' },
+              { text: 'Johar', color: '#F3EEE1' },
               { text: ' ', color: '#F3EEE1' },
-              { text: 'Trove', color: '#5DCAA5' },
+              { text: 'Jharkhand', color: '#5DCAA5' },
             ]}
             className="font-serif text-[15vw] md:text-[5.5vw] leading-[0.95] tracking-tight"
           />
@@ -56,18 +57,7 @@ export default function HomePage() {
           </p>
 
           <div className="mt-8 flex items-center gap-4">
-            <a
-              href="/login"
-              className="font-sans bg-[#E0A458] text-[#2C1B0A] text-sm font-medium px-6 py-3 rounded-full hover:bg-[#eeb672] transition-colors"
-            >
-              Log In
-            </a>
-            <a
-              href="#about"
-              className="font-sans text-sm text-[#9BB2A0] hover:text-[#E0A458] transition-colors"
-            >
-              Learn more →
-            </a>
+            <Button/>
           </div>
         </motion.div>
 

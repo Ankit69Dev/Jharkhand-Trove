@@ -1,20 +1,16 @@
 // @ts-nocheck
 "use client";
 import React , {useState} from 'react';
+import { signIn } from 'next-auth/react';
 import styled from 'styled-components';
 
-
-
 const Button = () => {
-    const [loading, setLoading] = useState(false);
-
+  const [loading, setLoading] = useState(false);
+ 
   const handleGoogleSignIn = async () => {
     try {
       setLoading(true);
-
-      // Add your Google auth logic here
-      console.log("Google sign in clicked");
-
+      await signIn('google', { callbackUrl: '/dashboard' });
     } catch (error) {
       console.error(error);
     } finally {

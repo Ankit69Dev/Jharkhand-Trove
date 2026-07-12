@@ -43,7 +43,7 @@ export default function UnauthNavbar() {
           href="/"
           className="font-serif text-lg text-[#F3EEE1] tracking-tight shrink-0"
         >
-          Jharkhand<span className="text-[#5DCAA5]">Trove</span>
+          Johar <span className="text-[#5DCAA5]">Jharkhand</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-7 mx-6">
@@ -59,19 +59,7 @@ export default function UnauthNavbar() {
         </div>
 
         <div className="flex items-center gap-3 shrink-0">
-          <Link
-            href="/login"
-            className="hidden md:inline-block font-sans bg-[#E0A458] text-[#2C1B0A] text-sm font-medium px-5 py-2 rounded-full hover:bg-[#eeb672] transition-colors"
-          >
-            Log in
-          </Link>
-          <button
-            className="md:hidden text-[#F3EEE1] p-1"
-            onClick={() => setMobileOpen((v) => !v)}
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
+          
         </div>
       </motion.nav>
 
