@@ -3,7 +3,6 @@
 import dynamic from 'next/dynamic';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import UnauthNavbar from '@/components/navbar';
 import TextPressure from '@/components/TextPressure';
 import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
@@ -31,7 +30,6 @@ export default function HomePage() {
 
   return (
     <main className="bg-[#0A1410] min-h-screen">
-      <UnauthNavbar />
 
       <section
         ref={heroRef}
